@@ -14,6 +14,7 @@ Cross-platform image picker for React/React Native. Built for iOS, Android, and 
 
 #### Requirements
 1. For web use in `create-react-app` you MUST have `react-scripts` version 1.0.8 or higher.
+2. For mobile use I recommend `create-react-native-app`, either way expo must be installed.
 
 #### example
 ```javascript
