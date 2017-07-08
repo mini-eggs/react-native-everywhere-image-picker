@@ -1,24 +1,29 @@
 import React from "react";
-import { View } from "react-native";
+import { TouchableWithoutFeedback, View } from "react-native";
 import { ImagePicker } from "expo";
 
-export default class extends React.Component {
-  _pickImage = async () => {
-    const settings = this.props.settings || {};
+function pickImage(settings, onComplete, onFail) {
+  return async () => {
+    const settings = settings || {};
     try {
       const result = await ImagePicker.launchImageLibraryAsync(settings);
-      this.props.onComplete(result);
+      onComplete(result);
     } catch (err) {
       const data = { cancelled: false, error: err };
-      this.props.onFail(data);
+      onFail(data);
     }
   };
+}
 
-  render() {
-    return (
-      <View style={this.props.style} onPress={this._pickImage}>
-        {this.props.children}
+export default function({ style, children, settings, onComplete, onFail }) {
+  return (
+    <TouchableWithoutFeedback
+      style={style}
+      onPress={pickImage(settings, onComplete, onFail)}
+    >
+      <View>
+        {children}
       </View>
-    );
-  }
+    </TouchableWithoutFeedback>
+  );
 }
