@@ -34,7 +34,7 @@ const style = {
   }
 };
 
-export default class Example extends React.Component {
+export default class extends React.Component {
   state = { uri: null };
 
   _handleImage = ({ uri }) => {
