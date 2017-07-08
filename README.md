@@ -1,7 +1,7 @@
 # React Native Everywhere Image Picker
 Cross-platform image picker for React/React Native. Built for iOS, Android, and web.
 
-#### web screenshots
+#### Web screenshots
 
 ![](https://github.com/mini-eggs/react-native-everywhere-image-picker/raw/master/artwork/web-example.png)
 
@@ -16,7 +16,7 @@ Cross-platform image picker for React/React Native. Built for iOS, Android, and 
 1. For web use in `create-react-app` you MUST have `react-scripts` version 1.0.8 or higher.
 2. For mobile use I recommend `create-react-native-app`, either way expo must be installed.
 
-#### example
+#### Example
 ```javascript
 import React from "react";
 import { Text, Image, View } from "react-native";
