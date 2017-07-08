@@ -1,6 +1,14 @@
 # React Native Everywhere Image Picker
 Cross-platform image picker for React/React Native. Built for iOS, Android, and web.
 
+#### web screenshots
+
+![](https://github.com/mini-eggs/react-native-everywhere-image-picker/raw/master/artwork/web-example.png)
+
+#### iOS screenshots
+
+![](https://github.com/mini-eggs/react-native-everywhere-image-picker/raw/master/artwork/ios-example.png)
+
 #### Installation
 `npm install --save react-native-everywhere-image-picker`
 
