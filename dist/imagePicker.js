@@ -44,7 +44,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 function pickImage(settings, onComplete, onFail) {
   var _this = this;
 
-  return _asyncToGenerator(_regenerator2.default.mark(function _callee() {
+  return _asyncToGenerator( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
     var settings, result, data;
     return _regenerator2.default.wrap(function _callee$(_context) {
       while (1) {
